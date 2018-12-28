@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Andrew Wagner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
-    
+
+
+    <div class="wrapper">
+        <header class="header">Andrew Wagner</header>
+
+<!-- Languages Here----------------------------------------------------------------------------------------- -->        
+        <aside class="aside languages">
+            <ul>
+
+                <button class="collapsible">JavaScript</button>
+                    <div class="content">
+                        <ul>
+                            <li>Word Game</li>
+                            <li>Crystal Game</li>
+                        </ul>
+                    </div>
+
+                <button class="collapsible">Node</button>
+                    <div class="content">
+                        <ul>
+                            <li>Liri</li>
+                            <li>Bamazon</li>
+                        </ul>
+                    </div>
+
+                <button class="collapsible">Express</button>
+                    <div class="content">
+                        <ul>
+                            <li>Bamazon</li>
+                            <li>Friend Finder</li>
+                        </ul>
+                    </div>
+
+        </aside>
+
+<!-- Description Of Project Here----------------------------------------------------------------------------------------- -->
+        <aside class="aside description">
+            <p>Description of language project goes here</p>
+        </aside>
+
+<!-- Site Here----------------------------------------------------------------------------------------- -->
+        <section class="main">
+            <p>Site goes here</p>
+        </section>
+
+<!-- Wrapper End----------------------------------------------------------------------------------------- -->
+</div>
 </body>
+
+
+<script type="text/javascript">
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+
 </html>
