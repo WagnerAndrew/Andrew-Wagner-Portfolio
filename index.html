@@ -15,7 +15,11 @@
 
 
     <div class="wrapper">
-        <header class="header">Andrew Wagner</header>
+<!-- Header----------------------------------------------------------------------------------------- -->       
+        <header>
+            <h1>Andrew Wagner</h1>
+            <h4>Full Stack Web Developer</h4>
+        </header>
 
 <!-- Languages Here----------------------------------------------------------------------------------------- -->        
         <aside class="aside languages">
@@ -24,24 +28,25 @@
                 <button class="collapsible">JavaScript</button>
                     <div class="content">
                         <ul>
-                            <li>Word Game</li>
-                            <li>Crystal Game</li>
+                            <li id="javaWordGame">Word Game</li>
+                            <li id="javaCrystalGame">Crystal Game</li>
+                            <li id="javaTrainScheduler">Train Scheduler</li>
                         </ul>
                     </div>
 
                 <button class="collapsible">Node</button>
                     <div class="content">
                         <ul>
-                            <li>Liri</li>
-                            <li>Bamazon</li>
+                            <li id="nodeLiri">Liri</li>
+                            <li id="nodeBamazon">Bamazon</li>
                         </ul>
                     </div>
 
                 <button class="collapsible">Express</button>
                     <div class="content">
                         <ul>
-                            <li>Bamazon</li>
-                            <li>Friend Finder</li>
+                            <li id="expressBamazon">Bamazon</li>
+                            <li id="expressFriendFinder">Friend Finder</li>
                         </ul>
                     </div>
 
@@ -54,21 +59,23 @@
 
 <!-- Site Here----------------------------------------------------------------------------------------- -->
         <section class="main">
-            <p>Site goes here</p>
+            <!-- <iframe src="https://wagnerandy.github.io/GifTastic/"></iframe> -->
         </section>
 
 <!-- Wrapper End----------------------------------------------------------------------------------------- -->
 </div>
 </body>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 
+
+// Start language menu collapse/expand script /////////////////////////////////////////////////////////////////////////////
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
+        coll[i].addEventListener("click", function (event) {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
@@ -78,6 +85,27 @@
             }
         });
     }
+
+// Start project select script /////////////////////////////////////////////////////////////////////////////////////////////
+
+    $("#javaWordGame").on("click", function(event) {
+    event.preventDefault();
+
+    var projectArr = [
+        {javaWordGame: src="https://wagnerandy.github.io/GifTastic/"},
+        {javaCrystalGame: src="https://wagnerandy.github.io/GifTastic/"}
+        ];
+
+    
+    for (i=0; i<projectArr.length; i++){
+
+        if (this.id = [i]){
+            $("#description").empty;
+        }
+    }
+});
+
+
 
 </script>
 
