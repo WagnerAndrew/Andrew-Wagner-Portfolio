@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -28,9 +27,9 @@
                 <button class="collapsible">JavaScript</button>
                     <div class="content">
                         <ul>
-                            <li id="javaWordGame">Word Game</li>
-                            <li id="javaCrystalGame">Crystal Game</li>
-                            <li id="javaTrainScheduler">Train Scheduler</li>
+                            <li> <a id="javaWordGame" class="projectLink" href="url">Word Game</a> </li>
+                            <li> <a id="javaCrystalGame" class="projectLink" href="url">Crystal Game</a> </li>
+                            <li> <a id="javaTrainScheduler" class="projectLink" href="url">Train Scheduler</a> </li>
                         </ul>
                     </div>
 
@@ -59,54 +58,15 @@
 
 <!-- Site Here----------------------------------------------------------------------------------------- -->
         <section class="main">
-            <!-- <iframe src="https://wagnerandy.github.io/GifTastic/"></iframe> -->
+            <iframe id="project"></iframe>
         </section>
 
 <!-- Wrapper End----------------------------------------------------------------------------------------- -->
 </div>
-</body>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script src="script.js"></script>
 
-
-// Start language menu collapse/expand script /////////////////////////////////////////////////////////////////////////////
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function (event) {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-
-// Start project select script /////////////////////////////////////////////////////////////////////////////////////////////
-
-    $("#javaWordGame").on("click", function(event) {
-    event.preventDefault();
-
-    var projectArr = [
-        {javaWordGame: src="https://wagnerandy.github.io/GifTastic/"},
-        {javaCrystalGame: src="https://wagnerandy.github.io/GifTastic/"}
-        ];
-
-    
-    for (i=0; i<projectArr.length; i++){
-
-        if (this.id = [i]){
-            $("#description").empty;
-        }
-    }
-});
-
-
-
-</script>
-
+</body>
 </html>
