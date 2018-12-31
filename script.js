@@ -39,6 +39,8 @@ var descriptionArr = [
     {javaCrystalGame: "You add the crystals"},
     {javaTrainScheduler: "You schedule trains"}
     ];
+ 
+var descPara = $("<p>");
 
 
 
@@ -46,8 +48,9 @@ var descriptionArr = [
 for (i=0; i<projectArr.length; i++){
 
     if (projectLink == Object.keys(projectArr[i]) &&  Object.keys(descriptionArr[i])){
-        $("#description").empty;
-        $("#description").append(Object.values(descriptionArr[i]))
+        console.log("Description Array Value is " + Object.values(descriptionArr[i]));
+        $("#description").empty();
+        $("#description").append(descPara, Object.values(descriptionArr[i]))
         // console.log("Project Array Value is " + Object.values(projectArr[i]));
         $("#project").attr("src", Object.values(projectArr[i]))
     }
