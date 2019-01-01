@@ -1,8 +1,7 @@
 body {
-  /* padding: 2em;  */
   color: #000000;
   font-family: 'Roboto', sans-serif;
-  background-color: #DECDBE;
+  background: #FFFFFF;
 }
 
 .wrapper {
@@ -19,42 +18,36 @@ body {
   background: ;
 } */
 
-h1{
+h1 {
   font-family: 'Archivo', sans-serif;
-  font-size: 5em;
+  font-size: 4em;
   color: #FF6F61;
   margin: 0;
 }
-h4{
+h2 {
   font-family: 'Archivo', sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 0;
 }
 
-.main {
-  text-align: left;
-  /* background: deepskyblue; */
-}
-
 .collapsible {
-  background-color: #777;
-  color: #DECDBE;
+  color: #FFFFFF;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .active, .collapsible:hover {
-  background-color: #009473;
+  background-color: #88b04b;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: #DECDBE;
+  /* color: #DECDBE; */
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -68,8 +61,8 @@ h4{
   padding: 5 5;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background: #DECDBE;
+  transition: max-height 0.6s ease-out;
+  background: rgba(255,255,255,.5);
   width: 100%;
 }
 
@@ -102,16 +95,25 @@ a {
 }
 
 a:hover {
-  color: #5a5b9f;
+  color: #88b04b;
 }
+
+
 
 .languages {
   background:rgba(155,183,212,1);
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .description {
-  background:rgba(155,183,212,.5);
+  background:rgba(155,183,212,.1);
+}
+
+.main {
+  /* background: orange; */
+  justify-content: center;
+  align-items: center;
 }
 
 iframe {
@@ -120,10 +122,11 @@ iframe {
 }
 
 
-
+/* Media Queries */
 
 @media all and (max-width: 700px) {
   h1 { font-size: 3em }
+  h2 { font-size: 1.25em }
 }
 
 @media all and (min-width: 600px) {
@@ -134,14 +137,12 @@ iframe {
 
 @media all and (max-width: 500px) {
   h1 { font-size: 2em }
-  h4 { font-size: 1.5em }
+  h2 { font-size: 1em }
   .collapsible { width: 100%; }
   .content { width: 100%; }
 }
 
 @media all and (max-width: 400px) {
-  h1 { font-size: 2em }
-  h4 { font-size: 1.5em }
   .collapsible { width: 100%; }
   .content { width: 100%; }
   .description { height: 200px;
@@ -149,8 +150,9 @@ iframe {
 }
 
 @media all and (max-width: 350px) {
-  h1 { font-size: 1.5em }
-  h4 { font-size: 1.25em }
+  h1 { font-size: 1em }
+  h2, .collapsible, .languages { font-size: .75em }
+  .description { font-size: .5em }
   .collapsible { width: 100%; }
   .content { width: 100%; }
   .description { height: 150px;
