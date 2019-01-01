@@ -6,8 +6,8 @@ body {
 }
 
 .wrapper {
-  display: flex;  
-  flex-flow: row wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .wrapper > * {
@@ -41,7 +41,7 @@ h4{
   color: #DECDBE;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -69,8 +69,8 @@ h4{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #7bc4c4;
-  width: 50%;
+  background: #DECDBE;
+  width: 100%;
 }
 
 /* These are monochromatic colors and shades of #DD4124 colorhexa.com*/
@@ -102,31 +102,34 @@ a {
 }
 
 a:hover {
-  color: hotpink;
+  color: #5a5b9f;
 }
 
 .languages {
-  /* background: gold; */
+  background:rgba(155,183,212,1);
   justify-content: flex-start;
 }
 
-/* .description {
-  background: hotpink;
-} */
+.description {
+  background:rgba(155,183,212,.5);
+}
 
 iframe {
   width: 100%;
   height: 800px;
 }
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0 }
-  .languages { width: 30%}
-  .description { width: 70%}
-}
+
+
 
 @media all and (max-width: 700px) {
   h1 { font-size: 3em }
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0 }
+  .description {flex-grow: 3}
+  
 }
 
 @media all and (max-width: 500px) {
@@ -141,7 +144,7 @@ iframe {
   h4 { font-size: 1.5em }
   .collapsible { width: 100%; }
   .content { width: 100%; }
-  .description { height: 150px;
+  .description { height: 200px;
     overflow: scroll; }
 }
 
@@ -150,6 +153,6 @@ iframe {
   h4 { font-size: 1.25em }
   .collapsible { width: 100%; }
   .content { width: 100%; }
-  .description { height: 100px;
+  .description { height: 150px;
   overflow: scroll; }
 }
