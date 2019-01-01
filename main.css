@@ -30,9 +30,23 @@ h2 {
   margin: 0;
 }
 
+.languages {
+  background:rgba(155,183,212,1);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.description {
+  background:rgba(155,183,212,.1);
+}
+
+.main {
+  /* background: orange; */
+  display: flex;
+  justify-content: space-around;
+}
 .collapsible {
   color: #FFFFFF;
-  cursor: pointer;
   padding: 10px;
   width: 100%;
   border: none;
@@ -47,7 +61,6 @@ h2 {
 
 .collapsible:after {
   content: '\002B';
-  /* color: #DECDBE; */
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -58,7 +71,6 @@ h2 {
 }
 
 .content {
-  padding: 5 5;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease-out;
@@ -85,8 +97,8 @@ ul {
 }
 
 li {
-  padding-inline-start: 40px;
-  margin: 10px 0px;
+  padding-inline-start: 10px;
+  margin: 5px 0px;
 }
 
 a {
@@ -96,24 +108,6 @@ a {
 
 a:hover {
   color: #88b04b;
-}
-
-
-
-.languages {
-  background:rgba(155,183,212,1);
-  justify-content: center;
-  align-items: center;
-}
-
-.description {
-  background:rgba(155,183,212,.1);
-}
-
-.main {
-  /* background: orange; */
-  justify-content: center;
-  align-items: center;
 }
 
 iframe {
@@ -138,23 +132,19 @@ iframe {
 @media all and (max-width: 500px) {
   h1 { font-size: 2em }
   h2 { font-size: 1em }
-  .collapsible { width: 100%; }
-  .content { width: 100%; }
 }
 
 @media all and (max-width: 400px) {
-  .collapsible { width: 100%; }
-  .content { width: 100%; }
-  .description { height: 200px;
+  .description { 
+    height: 200px;
     overflow: scroll; }
 }
 
 @media all and (max-width: 350px) {
   h1 { font-size: 1em }
-  h2, .collapsible, .languages { font-size: .75em }
-  .description { font-size: .5em }
-  .collapsible { width: 100%; }
-  .content { width: 100%; }
-  .description { height: 150px;
-  overflow: scroll; }
+  h2, .collapsible, .languages, .projectLink { font-size: .75em }
+  .description { 
+    font-size: .5em ;
+    height: 150px;
+    overflow: scroll; }
 }
