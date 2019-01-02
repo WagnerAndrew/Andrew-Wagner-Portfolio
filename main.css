@@ -1,6 +1,7 @@
 body {
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: Helvetica, sans-serif;
   background: #FFFFFF;
 }
 
@@ -19,23 +20,25 @@ body {
 } */
 
 h1 {
-  font-family: 'Archivo', sans-serif;
+  /* font-family: 'Archivo', sans-serif; */
+  font-family: Helvetica, sans-serif;
   font-size: 4em;
   color: #FF6F61;
   margin: 0;
 }
 h2 {
-  font-family: 'Archivo', sans-serif;
+  /* font-family: 'Archivo', sans-serif; */
+  font-family: Helvetica, sans-serif;
   font-size: 1.75em;
   margin: 0;
 }
 
 .languages {
-  background:rgba(155,183,212,1);
+  /* background:rgba(155,183,212,1); */
 }
 
 .description {
-  background:rgba(155,183,212,.1);
+  /* background:rgba(155,183,212,.1); */
   line-height: 1.5em;
 }
 
@@ -72,7 +75,7 @@ h2 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
-  background: rgba(255,255,255,.6);
+  background: rgba(222,205,190,1);
   width: 100%;
 }
 
@@ -117,7 +120,7 @@ iframe {
 
 /* Media Queries */
 
-@media all and (max-width: 700px) {
+@media all and (min-width: 700px) {
   h1 { font-size: 3em }
   h2 { font-size: 1.25em }
 }
@@ -129,21 +132,10 @@ iframe {
 }
 
 @media all and (max-width: 500px) {
-  h1 { font-size: 2em }
-  h2 { font-size: 1em }
-}
-
-@media all and (max-width: 400px) {
-  .description { 
-    height: 200px;
-    overflow: scroll; }
-}
-
-@media all and (max-width: 350px) {
   h1 { font-size: 1em }
   h2, .collapsible, .languages, .projectLink { font-size: .75em }
   .description { 
     font-size: .5em ;
-    height: 150px;
+    height: 200px;
     overflow: scroll; }
 }
