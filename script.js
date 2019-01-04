@@ -51,6 +51,7 @@ var descriptionArr = [
 ];
  
 var descPara = $("<p>");
+var projButton = $("<p><button class='open'>Open</button></p>")
 
 
 
@@ -58,12 +59,21 @@ var descPara = $("<p>");
 for (i=0; i<projectArr.length; i++){
 
     if (projectLink == Object.keys(projectArr[i]) &&  Object.keys(descriptionArr[i])){
-        console.log("Description Array Value is " + Object.values(descriptionArr[i]));
+        
         $("#description").empty();
-        $("#description").append(descPara, Object.values(descriptionArr[i]))
-        // console.log("Project Array Value is " + Object.values(projectArr[i]));
+        $("#description").append(descPara, Object.values(descriptionArr[i]), projButton)
         $("#project").attr("src", Object.values(projectArr[i]))
     }
 }
 });
 
+//Modal functionality ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(document).on("click", ".open", function(){
+    $(".popup-overlay, .popup-content").addClass("active");
+  });
+  
+  
+$(".close, .popup-overlay").on("click", function(){
+    $(".popup-overlay, .popup-content").removeClass("active");
+  });

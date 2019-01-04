@@ -26,6 +26,7 @@ h1 {
   color: #FF6F61;
   margin: 0;
 }
+
 h2 {
   /* font-family: 'Archivo', sans-serif; */
   font-family: Helvetica, sans-serif;
@@ -75,8 +76,10 @@ h2 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
-  background: rgba(222,205,190,1);
+  background: rgba(222,205,190,.3);
+  font-size: .75em;
   width: 100%;
+  overflow: auto;
 }
 
 /* These are monochromatic colors and shades of #DD4124 colorhexa.com*/
@@ -113,29 +116,121 @@ a:hover {
 }
 
 iframe {
-  width: 90%;
+  width: 100%;
   height: 700px;
 }
+
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  visibility:hidden;
+  position:absolute;
+  background:#ffffff;
+  border:3px solid #ffffff;
+  width:90%;
+  height:725px;
+  /* left:25%;  */
+}
+.popup-overlay.active{
+  /*displays pop-up when "active" class is present*/
+  visibility:visible;
+  text-align:center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+ visibility:hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility:visible;
+}
+
+.open .close{
+  display:inline-block;
+  vertical-align:middle;
+  margin:.20rem;
+  font-size: 1rem;
+  color:#666666;
+  background:#ffffff;
+  border:1px solid #666666;  
+}
+
+.open:hover .close:hover{
+  border:1px solid #666666;
+  background:#666666;
+  color:#ffffff;
+}
+
 
 
 /* Media Queries */
 
-@media all and (min-width: 700px) {
-  h1 { font-size: 3em }
-  h2 { font-size: 1.25em }
+@media all and (min-width: 801px) and (max-width: 1000px) {
+  .content {font-size: .5em}
+  
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   .aside { flex: 1 0 0 }
-  .description {flex-grow: 3}
-  
+  .description {flex-grow: 3}  
+}
+
+@media all and (max-width: 700px) {
+  h1 { font-size: 3em }
+  h2 { font-size: 1.25em }  
 }
 
 @media all and (max-width: 500px) {
   h1 { font-size: 1em }
   h2, .collapsible, .languages, .projectLink { font-size: .75em }
-  .description { 
-    font-size: .5em ;
-    height: 200px;
-    overflow: scroll; }
+  .description { font-size: .5em }
+  .content {font-size: .5em}  
 }
+
+
+
+/* 
+
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  /* visibility:hidden;/* 
+  position:absolute;
+  background:#ffffff;
+  border:3px solid #666666;
+  width:50%;
+  height:50%;
+  left:25%; 
+}/* 
+.popup-overlay.active{
+  /*displays pop-up when "active" class is present*/
+  /* visibility:visible;
+  text-align:center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+ /* visibility:hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+ /*  visibility:visible;
+}
+
+.open .close{
+  display:inline-block;
+  vertical-align:middle;
+  border-radius:30px;
+  margin:.20rem;
+  font-size: 1rem;
+  color:#666666;
+  background:   #ffffff;
+  border:1px solid #666666;  
+}
+
+.open:hover .close:hover{
+  border:1px solid #666666;
+  background:#666666;
+  color:#ffffff;
+} */
