@@ -33,6 +33,8 @@ var projectArr = [
     {nodeLIRI: "https://drive.google.com/file/d/1EbpmkKu2hDE9ljmxgz7sQ20MBVLPveO8/preview"},
     {nodeBamazon: "https://drive.google.com/file/d/1h7tvBUtxoK6KUKsEJfz7Q1VUQLvbJPai/preview"},
     {expressFriendFinder: "https://limitless-anchorage-24722.herokuapp.com/"},
+    {expressHamburger: "https://glacial-falls-35691.herokuapp.com/"}
+    
 
     ];
 
@@ -44,6 +46,7 @@ var descriptionArr = [
     {nodeLIRI: "<strong>Description:</strong><br>This a command line NODE application that takes in user input from the terminal to search for concert listings, song information or movie information.<p>It uses the <em>axios</em> NPM package to send requests to the Bands In Town, Spotify and OMDB APIs.<p>Additional NPM packages include: <em>Moment, DotEnv, Inquirer and Node-Spotify-API.</em><p><strong>Technical:</strong><br>Node, NPM Package, JavaScript, jQuery, AJAX, APIs"},
     {nodeBamazon: "<strong>Description:</strong><br>This a command line NODE application that operates like a mock storefront .<p>It accesses a MySQL database where product information is stored.<p>A user can operate as a customer or manager and different accessibility will change accordingly. Customers can view products and purchase them in different quantities.  If the product quantity is available, the total cost will be calculated for the customer.  If there is not enough product, the sale will not go through.<p>In manager mode, products can be added, quantities less than 5 can be viewed and quantities can be updated.<p><strong>Technical:</strong><br>MySQL, Node, NPM Package, JavaScript, jQuery, AJAX"},
     {expressFriendFinder: "<strong>Description:</strong><br>This is a full-stack site that takes in results from user surveys, then compares the answers with those from other users.<p>Then the app displays the name and picture of the user with the best overall match.<p>It uses Express to handle routing.<p><strong>Technical:</strong><br>Express, HTML, CSS,  Bootstrap, JavaScript, jQuery, AJAX, API"},
+    {expressHamburger: "<strong>Description:</strong><br>This is a full-stack site that takes in user input for a burger they want to eat.<p> After the user submits the burger, it becomes available to eat.  Once devoured, it ends up in the 'Burgers you ate' column and can be eaten again<p>This app utilizes GET, POST and PUT routes within a Handlebars layout structure.<p>It uses Express to handle routing.<p><strong>Technical:</strong><br>Handlebars, Express, HTML, CSS, jQuery, AJAX"},
 
 ];
  
