@@ -106,16 +106,22 @@ h2 {
 
 /* These are monochromatic colors and shades of #DD4124 colorhexa.com*/
 
-.javaScript {
+.MongoDB {
   background-color: #9c2d18;
 }
-.Node {
+.Express {
   background-color: #b2331c;
 }
-
-.Express {
+.Node {
+  background-color: #c83a1f;
+}
+.javaScript {
   background-color: #dd4124;
 }
+
+
+
+
 
 ul {
   list-style-type: none;
@@ -145,6 +151,7 @@ a:hover {
   width: 90%;
   height: 725px;
   margin-bottom: 20px;
+
   /* left:25%;  */
 }
 .popup-overlay.activeModal {
@@ -201,7 +208,7 @@ iframe {
 
 button.close {
   font-size: 1.75em;
-  margin: .5em;
+  margin: 10px;
 }
 
 .open:hover, .close:hover {
