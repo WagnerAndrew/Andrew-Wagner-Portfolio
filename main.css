@@ -120,9 +120,6 @@ h2 {
 }
 
 
-
-
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -173,13 +170,19 @@ a:hover {
   visibility:visible;
 }
 
-button.open, button.close {
+button.open, button.close, button.gitBtn {
   color:#ffffff;
   background:#45b5aa;
   /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   outline: none;
   border: none;
+}
+
+button.gitBtn {
+  padding: .75em;
+  margin-top: .75em;
+  font-size: .75em;
 }
 
 button.open {
@@ -196,6 +199,7 @@ button.open {
 iframe {
   width: 90%;
   height: 700px;
+  
 }
 
 .iframe {
@@ -208,10 +212,10 @@ iframe {
 
 button.close {
   font-size: 1.75em;
-  margin: 10px;
+  margin: .5em;
 }
 
-.open:hover, .close:hover {
+.open:hover, .close:hover, .gitBtn:hover {
   background: #88b04b;
   color: #ffffff;
   box-shadow: 0 2.5px 5px rgba(0,0,0,0.25), 0 2.5px 2.5px rgba(0,0,0,0.22);
