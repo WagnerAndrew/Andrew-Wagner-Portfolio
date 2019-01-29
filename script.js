@@ -34,7 +34,8 @@ var projectArr = [
     {nodeBamazon: "https://drive.google.com/file/d/1h7tvBUtxoK6KUKsEJfz7Q1VUQLvbJPai/preview"},
     {expressFriendFinder: "https://limitless-anchorage-24722.herokuapp.com/"},
     {expressHamburger: "https://glacial-falls-35691.herokuapp.com/"},
-    {mongoScraper: "https://immense-citadel-16644.herokuapp.com/"}
+    {mongoScraper: "https://immense-citadel-16644.herokuapp.com/"},
+    {memoryGame: "https://wagnerandy.github.io/click-mem-game/"},
     
     
     ];
@@ -49,6 +50,7 @@ var descriptionArr = [
     {expressFriendFinder: "<strong>Description:</strong><br>This is a full-stack application that takes in results from user surveys and compares the answers with those from other users.<p>Then the app displays the name and picture of the user with the best overall match.<p>It uses Express to handle routing.<p><strong>Technical:</strong><br>Express, JavaScript, jQuery, AJAX, API, Bootstrap<p><button class='gitBtn'><a href='https://github.com/WagnerAndy/Friend-Finder' target='_blank'>GitHub Repository</a></button>"},
     {expressHamburger: "<strong>Description:</strong><br>This full-stack application utilizes ORM, GET, POST and PUT routes with Express and Handlebars.<p> A user can input a burger they want to eat and choose to devour it or eat it again.<p><strong>Technical:</strong><br>Express, MySQL, ORM, jQuery, AJAX, Handlebars<p><button class='gitBtn'><a href='https://github.com/WagnerAndy/burger' target='_blank'>GitHub Repository</a></button>"},
     {mongoScraper: "<strong>Description:</strong><br>This is a full-stack application that scrapes the Associated Press News website for top stories.<p>Users can save articles and make notes on the saved articles.<p>It uses Axios to pull data from the site, Cheerio to find HTML elements, Express to handle routing and MongoDB to store articles, saved articles and notes.<p><strong>Technical:</strong><br>MongoDB, Mongoose, Node, Express, Cheerio, Axios, Handlebars, Materialize, JavaScript, jQuery<p><button class='gitBtn'><a href='https://github.com/WagnerAndy/scrape' target='_blank'>GitHub Repository</a></button>"},
+    {memoryGame: "<strong>Description:</strong><br>This is a game built with React to test your memory.<p>The goal is to avoid clicking on the same Rock and Roller twice to increase your top score.<p><strong>Technical:</strong><br>React<p><button class='gitBtn'><a href='https://github.com/WagnerAndy/click-mem-game/tree/master' target='_blank'>GitHub Repository</a></button>"},
 
 ];
  
